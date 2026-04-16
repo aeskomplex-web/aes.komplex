@@ -6,7 +6,7 @@
 (function() {
     // ========== НАСТРОЙКИ (ИЗМЕНИТЕ ПОД СЕБЯ) ==========
     // Ссылка на ваш SVG-файл (в формате .txt на Google Диске)
-    const SVG_URL = 'https://script.google.com/macros/s/AKfycbyVlGN_W_I2wDGrvK2Kx1kaBD5p2BOPhNr6cTm0Lp1aebr8MrJZEf0Cphysaqw5wQ/exec';
+    const SVG_URL = 'https://raw.githubusercontent.com/aeskomplex-web/aes.komplex/refs/heads/main/aes_doma/bogatkova_260_1/svg/facade.svg';
     
     // Ссылка на Google Apps Script (если есть, иначе оставьте пустой строкой)
     const BACKEND_URL = 'https://script.google.com/macros/s/AKfycbxsHzRIJ-chFGXkX4hJjXHnTjf0O6Ge0ybBHtQ5EOcEXkcMqd2qRk5o0h0yfBWbRXc/exec';      
