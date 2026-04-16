@@ -1,0 +1,201 @@
+/* ============================================
+   Widget Windows Styles (для мойки окон)
+   ============================================ */
+
+/* ----- Общие стили ----- */
+.wo-app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+.wo-container {
+  background: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* ----- Шапка блока ----- */
+.wo-header {
+  text-align: center;
+  padding: 30px 20px 20px;
+}
+
+.wo-title {
+  font-size: 38px;
+  line-height: 1.2;
+  margin: 0 0 15px;
+  color: #1e2a36;
+}
+
+.wo-divider {
+  width: 70px;
+  height: 4px;
+  background-color: #ffc107;
+  margin: 0 auto 20px;
+}
+
+.wo-description {
+  color: #6c757d;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* ----- Контейнер для SVG ----- */
+.wo-svg-container {
+  background: #f8f9fa;
+  border-radius: 24px;
+  padding: 20px;
+  margin: 0 20px 20px;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  overflow-x: auto;
+}
+
+.wo-svg-container svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* ----- Форма ----- */
+.wo-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 0 20px 25px;
+}
+
+.wo-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px 20px;
+  border: 1px solid #ced4da;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.wo-input:focus {
+  outline: none;
+  border-color: #2c7da0;
+  box-shadow: 0 0 0 2px rgba(44, 125, 160, 0.2);
+}
+
+/* ----- Панель с суммой и кнопкой ----- */
+.wo-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: #f8f9fa;
+  border-radius: 60px;
+  padding: 15px 25px;
+  margin: 0 20px 20px;
+  border: 1px solid #e9ecef;
+}
+
+.wo-total {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.wo-total span {
+  color: #2c7da0;
+}
+
+/* ----- Кнопки ----- */
+.wo-btn {
+  border: none;
+  padding: 12px 32px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.wo-btn-primary {
+  background: #2c7da0;
+  color: white;
+}
+
+.wo-btn-primary:hover {
+  background: #1f5068;
+}
+
+.wo-btn-primary:disabled {
+  background: #adb5bd;
+  cursor: not-allowed;
+}
+
+/* ----- Админская кнопка ----- */
+.wo-admin {
+  text-align: center;
+  padding: 0 20px 20px;
+}
+
+.wo-btn-link {
+  background: none;
+  border: none;
+  color: #6c757d;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.wo-btn-link:hover {
+  color: #2c7da0;
+}
+
+/* ----- Стили для окон (SVG элементы) ----- */
+.window {
+  cursor: pointer;
+  transition: 0.1s;
+  stroke: #1B1918;
+  stroke-width: 0.5669;
+}
+
+.window:hover {
+  filter: brightness(0.95);
+  stroke-width: 1.2;
+}
+
+.window.selected {
+  stroke: #2c7da0;
+  stroke-width: 1.5;
+}
+
+.window.locked {
+  cursor: not-allowed;
+  filter: grayscale(0.6) opacity(0.5);
+  pointer-events: none;
+}
+
+/* ----- Адаптивность ----- */
+@media (max-width: 768px) {
+  .wo-title {
+    font-size: 28px;
+  }
+  
+  .wo-total {
+    font-size: 20px;
+  }
+  
+  .wo-btn {
+    padding: 10px 24px;
+    font-size: 16px;
+  }
+  
+  .wo-form {
+    flex-direction: column;
+  }
+  
+  .wo-input {
+    width: 100%;
+  }
+}
